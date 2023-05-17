@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("assets/fonts/Source\ Sans\ Pro/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+.title {
+    padding: 68px 90px;
+    background: #949396;
+}
+
+.title h1 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    color: #2F2F2F;
+}
+
+.userinfo {
+    margin:50px 90px ;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: #949396;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.userinfo h1 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 41px;
+    color: #252525;
+}
+
+.orders{
+    padding: 0px 90px 0px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+.orders h1{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    color: #252525;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: #949396;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.order h1{
+    font-size: 24px;
+}
+
+.order p{
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    color: #252525;
+}
+
+
+.roles{
+    padding: 50px 90px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+.roles h1{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    color: #252525;
+}
+
+.rolesrow{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+}
+
+.rolesrow a{
+    display: flex;
+    padding: 30px;
+    background: #949396;
+    border-radius: 10px;
+    gap: 20px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25);
+}
+
+.rolesrow a h1{
+    font-size: 24px;
+}
+
+
+@media(max-width: 1170px) {
+
+
+    .title {
+        padding: 32px 23px;
+    }
+
+    .title h1 {
+        font-size: 40px;
+    }
+
+
+    .userinfo{
+        margin:32px 23px ;
+        width: auto;
+        gap: 10px;
+    }
+
+    .userinfo h1{
+        font-size: 25px;
+    
+    }
+
+}
