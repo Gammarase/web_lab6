@@ -42,12 +42,12 @@
                         <p>Контакти</p>
                     </a>
                 </li>
-                <a href="{{url('form')}}">
+                <a href="{{url('login')}}">
                     <div class="reg-button">
                         <p>@if ($user)
                             {{"Вітаємо, $user->name"}}
                         @else
-                            {{"Зареєструватися"}}
+                            {{"Увійти"}}
                         @endif</p>
                     </div>
                 </a>

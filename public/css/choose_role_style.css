@@ -7,11 +7,12 @@
     font-family: "Source Sans Pro";
     src: url("assets/fonts/Source\ Sans\ Pro/SourceSansPro-Regular.ttf") format("truetype");
 }
-.roleinfo{
-    min-height: 70vh;
-}
 
 .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     padding: 68px 90px;
     background: #949396;
 }
@@ -28,32 +29,28 @@
     color: #2F2F2F;
 }
 
-.role{
-    margin:50px 90px ;
-    display: flex;
-    flex-direction: column;
 
-}
 
-.role h1{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 41px;
-    color: #252525;
-}
-
-.users_with_role{
-    padding: 0px 90px 50px;
+.roles{
+    min-height: 40vh;
+    padding: 50px 90px;
     display: flex;
     flex-direction: column;
     gap:40px;
 }
 
-.users_with_role h1{
+.roles h1{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    color: #252525;
+}
+
+.roles p{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -64,17 +61,40 @@
     color: #252525;
 }
 
-.users_with_role a {
+
+
+.roles a{
+    align-items: center;
     display: flex;
     padding: 30px;
+    justify-content: space-between;
     background: #949396;
     border-radius: 10px;
     gap: 20px;
     box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25);
 }
 
-.users_with_role a h1{
-    font-size: 24px;
+.roles a h1{
+    font-size: 28px;
+}
+
+button {
+    width: 150px;
+    height: 60px;
+    border: 3px solid #5386E4;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1.2em;
+    font-weight: 900;
+    font-family: 'Roboto';
+}
+
+button:hover {
+    background: #5386E4;
+    color: white;
+    font-size: 1.5em;
 }
 
 @media(max-width: 1170px) {
@@ -86,6 +106,18 @@
 
     .title h1 {
         font-size: 40px;
+    }
+
+
+    .userinfo{
+        margin:32px 23px ;
+        width: auto;
+        gap: 10px;
+    }
+
+    .userinfo h1{
+        font-size: 25px;
+
     }
 
 }

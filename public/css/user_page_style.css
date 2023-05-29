@@ -9,8 +9,16 @@
 }
 
 .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 68px 90px;
     background: #949396;
+}
+
+.title svg{
+    height: 55px ;
+    fill: #FFFFFF;
 }
 
 .title h1 {
@@ -28,11 +36,17 @@
 .userinfo {
     margin:50px 90px ;
     display: flex;
-    flex-direction: column;
     padding: 30px;
     background: #949396;
     border-radius: 10px;
+    align-items: center;
     gap: 20px;
+}
+
+.userinfo svg{
+    height: 182px;
+    background-color: #FFFFFF;
+    border-radius: 100%;
 }
 
 .userinfo h1 {
@@ -42,6 +56,17 @@
     font-style: normal;
     font-weight: 600;
     font-size: 35px;
+    line-height: 41px;
+    color: #252525;
+}
+
+.userinfo p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
     line-height: 41px;
     color: #252525;
 }
@@ -62,6 +87,27 @@
     font-weight: 600;
     font-size: 36px;
     color: #252525;
+}
+
+.orders p{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: #252525;
+}
+
+.orders svg{
+    height: 36px;
+}
+
+.orders-title{
+    gap: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .order {
@@ -85,6 +131,10 @@
     color: #252525;
 }
 
+.archive-wrap{
+    min-height: 40vh;
+    padding: 50px 0px;
+}
 
 .roles{
     padding: 50px 90px;
@@ -104,6 +154,26 @@
     color: #252525;
 }
 
+.roles p{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: #252525;
+}
+
+.roles svg{
+    height: 36px;
+}
+
+.role-title{
+    display: flex;
+    align-items: center;
+}
+
 .rolesrow{
     display: flex;
     flex-direction: row;
@@ -112,7 +182,8 @@
 
 .rolesrow a{
     display: flex;
-    padding: 30px;
+    align-items: center;
+    padding: 10px 20px;
     background: #949396;
     border-radius: 10px;
     gap: 20px;
@@ -121,6 +192,61 @@
 
 .rolesrow a h1{
     font-size: 24px;
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border: 0px solid transparent;
+    background-color: rgba(83,134,228,0.4);
+    border-radius: 1.25em;
+    transition: all 0.2s linear;
+}
+
+button:hover {
+    box-shadow: 3.4px 2.5px 4.9px rgba(0, 0, 0, 0.025),
+    8.6px 6.3px 12.4px rgba(0, 0, 0, 0.035),
+    17.5px 12.8px 25.3px rgba(0, 0, 0, 0.045),
+    36.1px 26.3px 52.2px rgba(0, 0, 0, 0.055),
+    99px 72px 143px rgba(0, 0, 0, 0.08);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 5em;
+    background-color: rgba(0, 0, 0, 0.253);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    left: 110%;
+    font-family: 'Roboto';
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgba(0, 0, 0, 0.253) transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
 
 
@@ -144,7 +270,7 @@
 
     .userinfo h1{
         font-size: 25px;
-    
+
     }
 
 }

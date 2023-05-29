@@ -7,7 +7,7 @@
     font-family: "Source Sans Pro";
     src: url("assets/fonts/Source\ Sans\ Pro/SourceSansPro-Regular.ttf") format("truetype");
 }
-.roleinfo{
+.pricelist{
     min-height: 70vh;
 }
 
@@ -28,32 +28,14 @@
     color: #2F2F2F;
 }
 
-.role{
-    margin:50px 90px ;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.role h1{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 41px;
-    color: #252525;
-}
-
-.users_with_role{
-    padding: 0px 90px 50px;
+.pricecolumn{
+    padding: 50px 90px;
     display: flex;
     flex-direction: column;
     gap:40px;
 }
 
-.users_with_role h1{
+.pricecolumn h1{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -64,18 +46,32 @@
     color: #252525;
 }
 
-.users_with_role a {
+.pricecolumn p{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #252525;
+}
+
+.price{
+    text-align: end;
+}
+
+.pricetile {
     display: flex;
     padding: 30px;
+    align-items: center;
+    justify-content: space-between;
     background: #949396;
     border-radius: 10px;
     gap: 20px;
     box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25);
 }
 
-.users_with_role a h1{
-    font-size: 24px;
-}
 
 @media(max-width: 1170px) {
 

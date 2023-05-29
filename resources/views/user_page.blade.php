@@ -10,29 +10,26 @@
 </div>
 
 <div class="userinfo">
-    <h1>{{$user->name}}</h1>
-    <h1>{{$user->email}}</h1>
-</div>
-
-<div class="orders">
-    <h1>Orders:</h1>
-    @foreach ($user->orders as $order)
-       <div class="order">
-         <h1>{{$order->name}}</h1>
-         <p>{{$order->description}}</p>
-         <p>till to: {{$order->deadline}}</p>
-        </div>
-    @endforeach
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 4a4 4 0 0 1 4 4 4 4 0 0 1 -4 4 4 4 0 0 1 -4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2h-16v-2c0-2.21 3.58-4 8-4z"/></svg>
+    <div class="contact-info">
+        <h1>{{$view_user->name}}</h1>
+        <p>{{$view_user->email}}</p>
+    </div>
 </div>
 
 
 <div class="roles">
     <h1>Roles:</h1>
-    <div class="rolesrow">
-    @foreach ($user->roles as $role)
-        <a href="{{url("role/$role->id")}}"><h1>{{$role->name}}</h1></a>
-    @endforeach
-    </div>
+    @if(count($view_user->roles)!=0)
+        <div class="rolesrow">
+            @foreach ($view_user->roles as $role)
+                <a href="{{url("role/$role->id")}}"><h1>{{$role->name}}</h1></a>
+            @endforeach
+        </div>
+    @else
+        <p>У користувача немає ролей</p>
+    @endif
+
 </div>
 
 @endsection
