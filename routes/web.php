@@ -23,6 +23,8 @@ Route::get('/dashboard', [Controller::class,'dashboard'])->middleware('auth');
 Route::get('/dashboard/order_archive', [Controller::class,'archive'])->middleware('auth');
 Route::get('/dashboard/available_roles', [Controller::class,'available_roles_page'])->middleware('auth');
 Route::get('/dashboard/new_order', [Controller::class,'add_order_page'])->middleware('auth');
+Route::get('/user_search', [Controller::class, 'userSearch'])->middleware('auth');
+Route::get('/role_search', [Controller::class, 'roleSearch'])->middleware('auth');
 Route::get('/', [Controller::class, 'getPage']);
 Route::get('/{pagename}', [Controller::class, 'getPage']);
 Route::get('/user/{userid}', [Controller::class, 'findUser'])->middleware('auth');

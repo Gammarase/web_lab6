@@ -79,6 +79,17 @@ class Controller extends BaseController
         }
     }
 
+    public function userSearch(){
+        if(request()->only('search_string')){
+            return view('user_search', ['user'=>auth()->user(),
+                "searched_users"=>User::where('name', 'LIKE', '%'.request()->input('search_string').'%')->get()]);
+        }
+        else{
+            return view('user_search', ['user'=>auth()->user(),
+                "searched_users"=>User::all()]);
+        }
+    }
+
     public function findRole($roleid = 0)
     {
         $user = auth()->user();
@@ -87,6 +98,17 @@ class Controller extends BaseController
             return view('role_page', ['user' => $user, 'role' => $role]);
         } else {
             return view('error', ['user' => $user]);
+        }
+    }
+
+    public function roleSearch(){
+        if(request()->only('search_string')){
+            return view('role_search', ['user'=>auth()->user(),
+                "searched_roles"=>Role::where('name', 'LIKE', '%'.request()->input('search_string').'%')->get()]);
+        }
+        else{
+            return view('role_search', ['user'=>auth()->user(),
+                "searched_roles"=>Role::all()]);
         }
     }
 

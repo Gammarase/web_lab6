@@ -16,6 +16,43 @@
     background: #949396;
 }
 
+form{
+    padding: 20px 90px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 31px;
+}
+
+form h1{
+    font-size: 32px;
+}
+
+input[type=submit]{
+    color: #FFFFFF;
+    max-width: 20vw;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 31px;
+}
+
+input{
+    width: 100%;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 31px;
+    border-radius: 5px;
+}
+
 .title h1 {
     padding: 0;
     margin: 0;
@@ -28,32 +65,15 @@
     color: #2F2F2F;
 }
 
-.role{
-    margin:50px 90px ;
-    display: flex;
-    flex-direction: column;
 
-}
-
-.role h1{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 41px;
-    color: #252525;
-}
-
-.users_with_role{
+.search-result{
     padding: 0px 90px 50px;
     display: flex;
     flex-direction: column;
     gap:40px;
 }
 
-.users_with_role h1{
+.search-result h1{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -65,7 +85,7 @@
 }
 
 
-.users_with_role p{
+.search-result p{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -75,7 +95,7 @@
     font-size: 20px;
     color: #252525;
 }
-.users_with_role a {
+.search-result a {
     display: flex;
     padding: 30px;
     background: #949396;
@@ -84,7 +104,7 @@
     box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25);
 }
 
-.users_with_role a h1{
+.search-result a h1{
     font-size: 24px;
 }
 

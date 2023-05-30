@@ -25,7 +25,7 @@
         </div>
     </div>
     <div class="userinfo">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg class="avatar" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="m12 4a4 4 0 0 1 4 4 4 4 0 0 1 -4 4 4 4 0 0 1 -4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2h-16v-2c0-2.21 3.58-4 8-4z"/>
         </svg>
@@ -33,6 +33,17 @@
             <h1>{{$user->name}}</h1>
             <p>{{$user->email}}</p>
         </div>
+        <div class="spacing"></div>
+        <a href="{{url('/user_search')}}">
+            <div class="reg-button">
+                <svg class="search-button" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m0 0h24v24h-24z" fill="#fff" opacity="0"/>
+                    <path
+                        d="m20.71 19.29-3.4-3.39a7.92 7.92 0 0 0 1.69-4.9 8 8 0 1 0 -8 8 7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zm-15.71-8.29a6 6 0 1 1 6 6 6 6 0 0 1 -6-6z"
+                        fill="#fff"/>
+                </svg>
+            </div>
+        </a>
     </div>
 
 
@@ -81,6 +92,18 @@
     <div class="roles">
         <div class="role-title">
             <h1>Ваші ролі:</h1>
+
+            <a href="{{url('/role_search')}}">
+                <div class="reg-button">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m0 0h24v24h-24z" fill="#fff" opacity="0"/>
+                        <path
+                            d="m20.71 19.29-3.4-3.39a7.92 7.92 0 0 0 1.69-4.9 8 8 0 1 0 -8 8 7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zm-15.71-8.29a6 6 0 1 1 6 6 6 6 0 0 1 -6-6z"
+                            fill="#fff"/>
+                    </svg>
+                </div>
+            </a>
+
             <a href="{{url('dashboard/available_roles')}}">
                 <div class="reg-button">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -90,6 +113,8 @@
                     </svg>
                 </div>
             </a>
+
+
         </div>
 
         @if(count($user->roles)!=0)
