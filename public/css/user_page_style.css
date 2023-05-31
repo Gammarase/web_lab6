@@ -16,8 +16,8 @@
     background: #949396;
 }
 
-.title svg{
-    height: 55px ;
+.title svg {
+    height: 55px;
     fill: #FFFFFF;
 }
 
@@ -34,27 +34,28 @@
 }
 
 .userinfo {
-    margin:50px 90px ;
+    margin: 50px 90px;
     display: flex;
     padding: 30px;
     background: #949396;
     border-radius: 10px;
     align-items: center;
-    gap: 20px;
+    justify-content: space-between;
 }
 
-.spacing{
-    width: 100%;
+.general-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .avatar {
     height: 182px;
-    width: 182px;
     background-color: #FFFFFF;
     border-radius: 100%;
 }
 
-.search-button{
+.search-button {
     height: 30px;
 }
 
@@ -80,14 +81,14 @@
     color: #252525;
 }
 
-.orders{
+.orders {
     padding: 0px 90px 0px;
     display: flex;
     flex-direction: column;
-    gap:40px;
+    gap: 40px;
 }
 
-.orders h1{
+.orders h1 {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -98,7 +99,7 @@
     color: #252525;
 }
 
-.orders p{
+.orders p {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -109,11 +110,11 @@
     color: #252525;
 }
 
-.orders svg{
+.orders svg {
     height: 36px;
 }
 
-.orders-title{
+.orders-title {
     gap: 20px;
     display: flex;
     align-items: center;
@@ -128,11 +129,11 @@
     gap: 20px;
 }
 
-.order h1{
+.order h1 {
     font-size: 24px;
 }
 
-.order p{
+.order p {
     font-size: 20px;
     font-family: 'Roboto';
     font-style: normal;
@@ -140,19 +141,20 @@
     color: #252525;
 }
 
-.archive-wrap{
+.archive-wrap {
     min-height: 40vh;
     padding: 50px 0px;
 }
 
-.roles{
+.roles {
     padding: 50px 90px;
     display: flex;
     flex-direction: column;
-    gap:40px;
+
+    gap: 40px;
 }
 
-.roles h1{
+.roles h1 {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -163,7 +165,7 @@
     color: #252525;
 }
 
-.roles p{
+.roles p {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -174,23 +176,24 @@
     color: #252525;
 }
 
-.roles svg{
+.roles svg {
     height: 36px;
 }
 
-.role-title{
+.role-title {
     gap: 20px;
     display: flex;
     align-items: center;
 }
 
-.rolesrow{
+.rolesrow {
     display: flex;
     flex-direction: row;
-    gap:40px;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-.rolesrow a{
+.rolesrow a {
     display: flex;
     align-items: center;
     padding: 10px 20px;
@@ -200,7 +203,7 @@
     box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25);
 }
 
-.rolesrow a h1{
+.rolesrow a h1 {
     font-size: 24px;
 }
 
@@ -211,7 +214,7 @@ button {
     align-items: center;
     padding: 1em;
     border: 0px solid transparent;
-    background-color: rgba(83,134,228,0.4);
+    background-color: rgba(83, 134, 228, 0.4);
     border-radius: 1.25em;
     transition: all 0.2s linear;
 }
@@ -260,7 +263,10 @@ button:hover {
 }
 
 
-@media(max-width: 1170px) {
+@media (max-width: 1170px) {
+    .avatar{
+        height: 100px;
+    }
 
 
     .title {
@@ -272,15 +278,40 @@ button:hover {
     }
 
 
-    .userinfo{
-        margin:32px 23px ;
+    .userinfo {
+        margin: 32px 23px;
         width: auto;
         gap: 10px;
     }
 
-    .userinfo h1{
+    .userinfo h1 {
         font-size: 25px;
 
+    }
+
+    .orders{
+        padding: 0px 23px;
+    }
+
+    .orders h1{
+        font-size: 28px;
+    }
+
+    .order h1{
+        font-size: 20px;
+    }
+    .order p{
+        font-size: 16px;
+    }
+    .roles {
+        padding: 50px 23px;
+    }
+
+    .roles h1{
+        font-size: 28px;
+    }
+    .rolesrow a h1{
+        font-size: 20px;
     }
 
 }

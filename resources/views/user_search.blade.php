@@ -9,7 +9,7 @@
             <h1>Пошук користувачів</h1>
         </div>
 
-        <form method="get" action="{{url('/role_search')}}">
+        <form method="get" action="{{url('/user_search')}}">
             <input type="text" name="search_string">
             <input class="reg-button" type="submit" value="Пошук">
         </form>

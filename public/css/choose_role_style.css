@@ -12,7 +12,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     padding: 68px 90px;
     background: #949396;
 }
@@ -109,15 +108,15 @@ button:hover {
     }
 
 
-    .userinfo{
-        margin:32px 23px ;
-        width: auto;
-        gap: 10px;
+
+
+    .roles{
+        gap: 20px;
+        min-height: 40vh;
+        padding: 20px 23px;
     }
 
-    .userinfo h1{
-        font-size: 25px;
-
+    .roles a h1 {
+        font-size: 24px;
     }
-
 }

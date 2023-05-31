@@ -59,6 +59,9 @@
 
 .price{
     text-align: end;
+    width: fit-content;
+    display: flex;
+    justify-content: end;
 }
 
 .pricetile {
@@ -82,6 +85,23 @@
 
     .title h1 {
         font-size: 40px;
+    }
+
+    .pricecolumn{
+        padding: 50px 23px;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+
+
+    .pricecolumn h1{
+        font-size: 20px;
+    }
+
+    .pricecolumn p{
+
+        font-size: 16px;
     }
 
 }

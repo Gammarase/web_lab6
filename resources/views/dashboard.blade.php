@@ -25,15 +25,16 @@
         </div>
     </div>
     <div class="userinfo">
-        <svg class="avatar" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="m12 4a4 4 0 0 1 4 4 4 4 0 0 1 -4 4 4 4 0 0 1 -4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2h-16v-2c0-2.21 3.58-4 8-4z"/>
-        </svg>
-        <div class="contact-info">
-            <h1>{{$user->name}}</h1>
-            <p>{{$user->email}}</p>
+        <div class="general-info">
+            <svg class="avatar" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="m12 4a4 4 0 0 1 4 4 4 4 0 0 1 -4 4 4 4 0 0 1 -4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2h-16v-2c0-2.21 3.58-4 8-4z"/>
+            </svg>
+            <div class="contact-info">
+                <h1>{{$user->name}}</h1>
+                <p>{{$user->email}}</p>
+            </div>
         </div>
-        <div class="spacing"></div>
         <a href="{{url('/user_search')}}">
             <div class="reg-button">
                 <svg class="search-button" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
